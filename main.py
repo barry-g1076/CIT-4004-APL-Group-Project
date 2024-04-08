@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from symbol_table import *
 from parser_1 import parser
 from semantic_analyzer import semantic_analyzer
