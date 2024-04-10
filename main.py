@@ -18,7 +18,11 @@ import io, sys
 # TODO: Add arrays and lists to the language
 
 app = Flask(__name__)
-allowed_origins = ["https://apl-web-ui.vercel.app", "*"]
+allowed_origins = [
+    "https://apl-web-ui.vercel.app",
+    "https://apl-cit-4004-web-ui.vercel.app",
+    "*",
+]
 
 CORS(app, origins=allowed_origins)
 
@@ -55,7 +59,7 @@ def parse_code():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
 # def main():
 #     # Get the source code
 #     from sourcecode import data as longdata
